@@ -5,7 +5,7 @@ function doCurl($url,$method='GET',$fields='',$callback=null)
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.digikala.com/v1/product/7310155/',
+        CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
